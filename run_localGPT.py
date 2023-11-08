@@ -110,7 +110,7 @@ LLM = load_model(device_type=DEVICE_TYPE,
                  model_id=MODEL_ID,
                  model_basename=MODEL_BASENAME
                  )
-prompt, memory = get_prompt_template(promptTemplate_type = "mistral",
+prompt, memory = get_prompt_template(promptTemplate_type = "other",
                                      history=False)
 
 QA = RetrievalQA.from_chain_type(
